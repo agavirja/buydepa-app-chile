@@ -10,9 +10,7 @@ from scripts.user_tracking import tracking
 if 'layout' not in st.session_state: 
     st.session_state.layout = "centered"
     
-st.set_page_config(layout=st.session_state.layout,initial_sidebar_state="collapsed")
-#st.set_page_config(layout=st.session_state.layout)
-
+st.set_page_config(layout=st.session_state.layout,initial_sidebar_state="expanded")
 
 # streamlit run D:\Dropbox\Empresa\Buydepa\PROYECTOS\APPCHILE\online\Home.py
 # https://streamlit.io/
