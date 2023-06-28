@@ -228,9 +228,9 @@ def main():
         
     with col3:
         if st.session_state.tiponegocio.lower()=='venta':
-            preciomax = st.text_input('Precio máximo',value='$20,000',key='preciomax',on_change=change_preciomax)
+            preciomax = st.text_input('Precio máximo (UF)',value='$20,000',key='preciomax',on_change=change_preciomax)
         if st.session_state.tiponegocio.lower()=='arriendo':
-            preciomax = st.text_input('Precio máximo',value='$200',key='preciomax',on_change=change_preciomax)
+            preciomax = st.text_input('Precio máximo (UF)',value='$200',key='preciomax',on_change=change_preciomax)
         preciomax = Price.fromstring(preciomax).amount_float
         
     # Filtro por area     
