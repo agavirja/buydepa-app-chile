@@ -149,17 +149,17 @@ if st.session_state.access:
     st.session_state.layout = "wide"
     opciones = {
         'Opcion 1': {
-            'url': f'http://localhost:8501/Listings?token={st.session_state.token}',
+            'url': f'https://buydepa-app-chile.streamlit.app/Listings?token={st.session_state.token}',
             'imagen': 'https://personal-data-bucket-online.s3.us-east-2.amazonaws.com/buydepa/mapa.png',
             'titulo': 'Listings'
         },
         'Opcion 2': {
-            'url': f'http://localhost:8501/Detalle_edificio?token={st.session_state.token}',
+            'url': f'https://buydepa-app-chile.streamlit.app/Detalle_edificio?token={st.session_state.token}',
             'imagen': 'https://personal-data-bucket-online.s3.us-east-2.amazonaws.com/buydepa/edificio.png',
             'titulo': 'Análisis por Edificio'
         },
         'Opcion 3': {
-            'url': 'http://localhost:8501/Ficha',
+            'url': 'https://buydepa-app-chile.streamlit.app/Ficha',
             'imagen': 'https://personal-data-bucket-online.s3.us-east-2.amazonaws.com/buydepa/tarjetarealestate.png',
             'titulo': 'Ficha del inmueble'
         }
